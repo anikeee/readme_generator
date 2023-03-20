@@ -10,3 +10,14 @@ const questions = [
     // ... add more questions here
 ];
 
+function generateBadge(license) {
+    const licenseInfo = {
+        'MIT': {
+            badge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+            text: 'This project is licensed under the MIT License.',
+        },
+        // ... add other licenses here
+    };
+
+    return licenseInfo[license];
+}
