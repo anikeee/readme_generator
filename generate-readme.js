@@ -33,3 +33,33 @@ ${badge}
 ## Description
 ${description}
 
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [Questions](#questions)
+
+## Installation
+${installation}
+
+## Usage
+${usage}
+
+## License
+${text}
+
+## Contributing
+${contributing}
+
+## Tests
+${tests}
+
+## Questions
+If you have any questions, please feel free to contact me:
+- [GitHub Profile](https://github.com/${githubUsername})
+- Email: ${email}
+`;
+}
+
