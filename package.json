@@ -1,23 +1,12 @@
 {
-  "name": "readme_generator",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A command-line application to generate a README.md file",
+  "main": "generate-readme.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node generate-readme.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anikeee/readme_generator.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/anikeee/readme_generator/issues"
-  },
-  "homepage": "https://github.com/anikeee/readme_generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.5"
+    "inquirer": "^7.3.3"
   }
 }

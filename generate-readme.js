@@ -7,6 +7,13 @@ const questions = [
         name: 'title',
         message: 'What is the title of your project?',
     },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Which license do you want to use for your application?',
+        choices: ['MIT', 'Apache 2.0'],
+    },
+
     // ... add more questions here
 ];
 
@@ -16,11 +23,16 @@ function generateBadge(license) {
             badge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
             text: 'This project is licensed under the MIT License.',
         },
+        'Apache 2.0': {
+            badge: '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+            text: 'This project is licensed under the Apache License, Version 2.0.',
+        },
         // ... add other licenses here
     };
 
     return licenseInfo[license];
 }
+
 
 function generateReadme(answers) {
     const { title, description, installation, usage, license, contributing, tests, githubUsername, email } = answers;
