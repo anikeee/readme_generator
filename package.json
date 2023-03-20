@@ -2,9 +2,9 @@
   "name": "readme-generator",
   "version": "1.0.0",
   "description": "A command-line application to generate a README.md file",
-  "main": "generate-readme.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node generate-readme.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "inquirer": "^7.3.3"

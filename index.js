@@ -34,7 +34,7 @@ function generateBadge(license) {
 }
 
 
-function generateReadme(answers) {
+function index(answers) {
     const { title, description, installation, usage, license, contributing, tests, githubUsername, email } = answers;
     const { badge, text } = generateBadge(license);
 
@@ -76,7 +76,7 @@ If you have any questions, please feel free to contact me:
 }
 
 inquirer.prompt(questions).then((answers) => {
-    const readmeContent = generateReadme(answers);
+    const readmeContent = index(answers);
     fs.writeFile('README.md', readmeContent, (err) => {
         if (err) throw err;
         console.log('README.md generated successfully!');
