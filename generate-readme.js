@@ -21,3 +21,15 @@ function generateBadge(license) {
 
     return licenseInfo[license];
 }
+
+function generateReadme(answers) {
+    const { title, description, installation, usage, license, contributing, tests, githubUsername, email } = answers;
+    const { badge, text } = generateBadge(license);
+
+    return `
+# ${title}
+${badge}
+
+## Description
+${description}
+
