@@ -63,3 +63,10 @@ If you have any questions, please feel free to contact me:
 `;
 }
 
+inquirer.prompt(questions).then((answers) => {
+    const readmeContent = generateReadme(answers);
+    fs.writeFile('README.md', readmeContent, (err) => {
+        if (err) throw err;
+        console.log('README.md generated successfully!');
+    });
+});
